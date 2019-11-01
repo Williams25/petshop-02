@@ -12,15 +12,29 @@ header {
 }
 
 .menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: menu;
   background: #18be50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .banner {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: banner;
 }
 
 .corpo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: corpo;
 }
 
@@ -29,72 +43,122 @@ header {
 }
 
 .doacao {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: doacao;
 }
 
 .rodape {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: rodape;
   background: #18be50;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 2%;
   margin-top: 15%;
 }
 
 .corpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .doacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid black;
 }
 
 .main {
   height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto 50px;
-  grid-template-areas: " menu menu" "banner banner" "corpo corpo" "doacao doacao" "rodape rodape";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto auto 50px;
+      grid-template-rows: auto auto auto auto 50px;
+      grid-template-areas: " menu menu" "banner banner" "corpo corpo" "doacao doacao" "rodape rodape";
 }
 
 @media (min-width: 500px) {
   .main {
     height: 100%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto 55px;
-    grid-template-areas: "menu menu menu" "banner banner banner" "corpo corpo corpo" "doacao doacao doacao" "rodape rodape rodape";
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto auto 55px;
+        grid-template-rows: auto auto auto auto 55px;
+        grid-template-areas: "menu menu menu" "banner banner banner" "corpo corpo corpo" "doacao doacao doacao" "rodape rodape rodape";
   }
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%;
   }
 }
@@ -152,3 +216,4 @@ header {
   height: 40%;
   margin: 2%;
 }
+/*# sourceMappingURL=main.css.map */

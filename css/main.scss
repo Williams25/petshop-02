@@ -1,13 +1,19 @@
+$cor: rgb(24, 190, 80);
 html,body {margin: 0;padding: 0;min-height: 100%;min-width: 100%;scroll-behavior: smooth;}
 // ARRUMAR RESPONSIVIDADE TA QUEBRANDO MEU BANNER
 header{position: fixed;width: 100%;}
 // GRID
-.menu {grid-area: menu;background: rgb(24, 190, 80);}
+.menu {
+  grid-area: menu;
+  background: $cor;
+  display: flex;
+  align-content: center;
+}
 .banner {grid-area: banner;}
 .corpo {grid-area: corpo;}
 .icon {grid-area: icon;}
 .doacao{grid-area: doacao;}
-.rodape {grid-area: rodape;background: rgb(24, 190, 80);}
+.rodape {grid-area: rodape;background: $cor;}
 // FLEX
 .menu {display: flex;justify-content: flex-start;align-items: flex-start;flex-wrap: wrap;width: 100%;}
 .banner {display: flex;justify-content: center;align-items: center;flex-wrap: wrap;margin: 2%; margin-top: 15%;}
